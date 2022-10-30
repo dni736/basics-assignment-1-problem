@@ -1,8 +1,11 @@
-var myName = "Demetre";
-var myAge = 26;
-var myAgeIn5 = myAge + 5;
-var myFavNum = Math.random();
-document.getElementById("name").innerText = myName;
-document.getElementById("age").innerText = myAge;
-document.getElementById("ageIn5").innerText = myAgeIn5;
-document.getElementById("favNum").innerText = myFavNum.toFixed(2);
+Vue.createApp({
+  data() {
+    return {
+      name: "Demetre",
+      age: 26,
+      favNum: Math.random().toFixed(2),
+      imgURL:
+        "https://assets.codepen.io/t-1003/internal/avatars/teams/default.png?fit=crop&format=auto&height=256&version=1513627136&width=256",
+    };
+  },
+}).mount("#assignment");

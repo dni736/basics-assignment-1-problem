@@ -15,21 +15,19 @@
   <body>
     <section id="assignment">
       <!-- 1) Output your name -->
-      <h2 id="name"></h2>
+      <h2>{{ name }}</h2>
       <!-- 2) Output your age -->
-      <p id="age"></p>
+      <p>{{ age }}</p>
       <!-- 3) Output your age + 5 -->
-      <p id="ageIn5"></p>
+      <p>{{ age + 5 }}</p>
       <!-- 4) Output a random number (0 to 1) -->
-      <p id="favNum"></p>
+      <p>{{ favNum }}</p>
       <div>
         <!-- 5) Display some image you found via Google -->
-        <img
-          src="https://assets.codepen.io/t-1003/internal/avatars/teams/default.png?fit=crop&format=auto&height=256&version=1513627136&width=256"
-        />
+        <img :src="imgURL" />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input type="text" value="Demetre" />
+      <input type="text" :value="name" />
     </section>
   </body>
 </html>

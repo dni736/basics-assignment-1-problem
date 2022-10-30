@@ -3,7 +3,7 @@
 }
 
 html {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 body {
@@ -37,6 +37,7 @@ p {
 input {
   font: inherit;
   border: 1px solid #ccc;
+  text-align: center;
 }
 
 input:focus {
